@@ -5,7 +5,7 @@
 Configuration
 '''
 
-import config_default
+import conf.config_default as config_default
 
 class Dict(dict):
     '''
@@ -46,7 +46,7 @@ def toDict(d):
 configs = config_default.configs
 
 try:
-    import config_override
+    import conf.config_override as config_override
     configs = merge(configs, config_override.configs)
 except ImportError:
     pass

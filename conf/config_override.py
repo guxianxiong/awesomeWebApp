@@ -7,6 +7,8 @@ Override configurations.
 
 configs = {
     'db': {
-        'host': '127.0.0.1'
+        'host': '118.31.90.219',
+        'user': 'root',
+        'password': 'Qwer4321',
     }
 }
