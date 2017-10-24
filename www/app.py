@@ -10,7 +10,7 @@ from jinja2 import Environment, FileSystemLoader
 
 import www.orm as orm
 
-from conf.config import configs
+from www.config import configs
 from www.coreweb import add_routes, add_static
 from www.handlers import cookie2user, COOKIE_NAME
 
@@ -142,11 +142,6 @@ def init(loop):
     srv = yield from loop.create_server(app.make_handler(), '127.0.0.1', 9000)
     logging.info('server started at http://127.0.0.1:9000...')
     return srv
-
-
-
-
-
 
 
 
